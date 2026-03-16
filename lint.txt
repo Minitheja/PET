@@ -1,0 +1,44 @@
+﻿
+> pet-sphere@0.1.0 lint
+> eslint
+
+
+C:\Documents\internship\PET\pet-sphere\src\components\home\AppSection.tsx
+  67:37  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Documents\internship\PET\pet-sphere\src\components\home\FeaturedProducts.tsx
+  5:8  warning  'Image' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Documents\internship\PET\pet-sphere\src\components\home\GroomingServices.tsx
+  4:27  warning  'Star' is defined but never used  @typescript-eslint/no-unused-vars
+  5:8   warning  'Link' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Documents\internship\PET\pet-sphere\src\components\home\Hero.tsx
+    4:10   warning  'ArrowRight' is defined but never used                           @typescript-eslint/no-unused-vars
+    4:46   warning  'Heart' is defined but never used                                @typescript-eslint/no-unused-vars
+   25:86   error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  118:100  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Documents\internship\PET\pet-sphere\src\components\home\ShopByBreed.tsx
+   4:8   warning  'Image' is defined but never used                                @typescript-eslint/no-unused-vars
+  32:88  error    `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+
+C:\Documents\internship\PET\pet-sphere\src\components\home\ShopCategories.tsx
+   4:10  warning  'ArrowRight' is defined but never used  @typescript-eslint/no-unused-vars
+   5:8   warning  'Link' is defined but never used        @typescript-eslint/no-unused-vars
+   6:8   warning  'Image' is defined but never used       @typescript-eslint/no-unused-vars
+  42:37  warning  'index' is defined but never used       @typescript-eslint/no-unused-vars
+
+C:\Documents\internship\PET\pet-sphere\src\components\home\Testimonials.tsx
+  45:32   error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  45:131  error  `'` can be escaped with `&apos;`, `&lsquo;`, `&#39;`, `&rsquo;`  react/no-unescaped-entities
+  96:37   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+  96:59   error  `"` can be escaped with `&quot;`, `&ldquo;`, `&#34;`, `&rdquo;`  react/no-unescaped-entities
+
+C:\Documents\internship\PET\pet-sphere\src\components\layout\Footer.tsx
+  2:60  warning  'Mail' is defined but never used    @typescript-eslint/no-unused-vars
+  2:66  warning  'MapPin' is defined but never used  @typescript-eslint/no-unused-vars
+  2:74  warning  'Phone' is defined but never used   @typescript-eslint/no-unused-vars
+
+Γ£û 21 problems (8 errors, 13 warnings)
+
