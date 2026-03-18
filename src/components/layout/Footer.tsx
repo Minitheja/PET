@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { PawPrint, Facebook, Instagram, Youtube, Linkedin, ArrowRight } from "lucide-react";
+import { PawPrint, Facebook, Instagram, Youtube, Linkedin, ArrowRight, Shield, Star } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -13,16 +13,16 @@ export default function Footer() {
                                 <PawPrint className="w-6 h-6 text-white" />
                             </div>
                             <span className="text-2xl font-display font-bold text-foreground">
-                                A to Z <span className="text-primary">Pets</span>
+                                A to Z <span className="text-primary">pets</span>
                             </span>
                         </Link>
                         <p className="text-muted-foreground leading-relaxed max-w-sm">
-                            A to Z Pets is your all-in-one companion for pet care, premium supplies, grooming services, and a loving community.
+                            A to Z pets is your all-in-one companion for pet care, wellness tracking, expert advice, and a loving community of pet parents.
                         </p>
 
                         {/* Newsletter Subscription */}
                         <div className="pt-4">
-                            <h4 className="font-bold text-foreground mb-3 text-sm">Subscribe to our Newsletter</h4>
+                            <h4 className="font-bold text-foreground mb-3 text-sm">Join our Community Newsletter</h4>
                             <div className="flex items-center max-w-sm bg-white rounded-xl border border-border p-1 focus-within:ring-2 focus-within:ring-primary focus-within:border-primary transition-all shadow-sm">
                                 <input
                                     type="email"
@@ -44,11 +44,23 @@ export default function Footer() {
                         </div>
                     </div>
 
-                    {/* Company Links */}
+                    {/* Quick Links */}
                     <div>
-                        <h4 className="font-display font-bold text-lg mb-6 text-foreground">Company</h4>
+                        <h4 className="font-display font-bold text-lg mb-6 text-foreground">A to Z pets</h4>
                         <ul className="space-y-4">
-                            {["About Us", "Careers", "Awards", "Store Locator"].map((item) => (
+                            {["Our Mission", "Features", "How it Works", "Community"].map((item) => (
+                                <li key={item}>
+                                    <Link href={`#${item.toLowerCase().replace(/\s+/g, '-')}`} className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">{item}</Link>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    {/* Resources */}
+                    <div>
+                        <h4 className="font-display font-bold text-lg mb-6 text-foreground">Resources</h4>
+                        <ul className="space-y-4">
+                            {["Pet Care Blog", "Health Guides", "Expert Connect", "Foundations"].map((item) => (
                                 <li key={item}>
                                     <Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">{item}</Link>
                                 </li>
@@ -56,23 +68,11 @@ export default function Footer() {
                         </ul>
                     </div>
 
-                    {/* Customer Care */}
+                    {/* Legal */}
                     <div>
-                        <h4 className="font-display font-bold text-lg mb-6 text-foreground">Customer Care</h4>
+                        <h4 className="font-display font-bold text-lg mb-6 text-foreground">Legal</h4>
                         <ul className="space-y-4">
-                            {["Track Order", "Contact Us", "Returns", "Shipping Policy"].map((item) => (
-                                <li key={item}>
-                                    <Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">{item}</Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* Community */}
-                    <div>
-                        <h4 className="font-display font-bold text-lg mb-6 text-foreground">Community</h4>
-                        <ul className="space-y-4">
-                            {["Blog", "Pet Tribe", "Foundation"].map((item) => (
+                            {["Privacy Policy", "Terms of Service", "Cookie Policy", "Contact Us"].map((item) => (
                                 <li key={item}>
                                     <Link href="#" className="text-muted-foreground hover:text-primary transition-colors text-sm font-medium">{item}</Link>
                                 </li>
@@ -83,7 +83,7 @@ export default function Footer() {
 
                 <div className="pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4">
                     <p className="text-sm text-muted-foreground font-medium">
-                        © {new Date().getFullYear()} A to Z Pets. All rights reserved.
+                        © {new Date().getFullYear()} A to Z pets. All rights reserved.
                     </p>
                     <div className="flex items-center gap-8 text-sm font-medium text-muted-foreground">
                         <Link href="#" className="hover:text-primary transition-colors">Privacy Policy</Link>

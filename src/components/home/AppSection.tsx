@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Apple, PlayCircle, Smartphone, Bell, Heart, CreditCard } from "lucide-react";
+import { Apple, PlayCircle, Smartphone, Bell, Heart, Shield } from "lucide-react";
 import Image from "next/image";
 
 export default function AppSection() {
@@ -68,14 +68,14 @@ export default function AppSection() {
                         </h2>
 
                         <p className="text-muted-foreground text-lg leading-relaxed">
-                            Experience the full power of A to Z pets on your mobile device. Book appointments, track health records, and shop on the go with our top-rated app.
+                            Experience the full power of A to Z pets on your mobile device. Book appointments, track health records, and explore expert resources on the go with our top-rated app.
                         </p>
 
                         <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             {[
                                 { icon: Smartphone, text: "Seamless UX" },
                                 { icon: Bell, text: "Real-time Alerts" },
-                                { icon: CreditCard, text: "Quick Payments" },
+                                { icon: Shield, text: "Data Security" },
                                 { icon: Heart, text: "Health Tracking" },
                             ].map((item, i) => (
                                 <li key={i} className="flex items-center gap-3 font-bold text-foreground py-2 text-sm">

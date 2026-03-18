@@ -15,7 +15,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "A to Z pets | Your All-in-One Pet Ecosystem",
-  description: "Shop premium pet products, book grooming, connect with pet lovers, and care for your furry friends effortlessly.",
+  description: "Track your pet's health, connect with a global community of pet parents, and access expert advice for the best care for your furry friends.",
 };
 
 import Navbar from "@/components/layout/Navbar";

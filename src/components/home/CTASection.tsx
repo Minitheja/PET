@@ -28,26 +28,26 @@ export default function CTASection() {
                         </h2>
 
                         <p className="text-primary-foreground/80 text-xl leading-relaxed">
-                            Create your account today and get 20% off your first purchase. Join over 10,000+ happy pet parents.
+                            Create your pet profile today and start tracking their health, connecting with experts, and exploring our community.
                         </p>
 
                         <div className="flex flex-wrap items-center justify-center gap-6 pt-6">
                             <Link
-                                href="/login"
+                                href="#community"
                                 className="bg-white text-primary px-10 py-5 rounded-[1.5rem] font-bold text-xl shadow-medium hover:translate-y-[-2px] hover:shadow-xl transition-all"
                             >
-                                Get Started Free
+                                Start Your Journey
                             </Link>
                             <Link
-                                href="#shop"
+                                href="#vision"
                                 className="flex items-center gap-2 border border-white/30 text-white px-10 py-5 rounded-[1.5rem] font-bold text-xl hover:bg-white/10 transition-all"
                             >
-                                Browse Products <ArrowRight className="w-6 h-6" />
+                                Learn More <ArrowRight className="w-6 h-6" />
                             </Link>
                         </div>
 
                         <p className="text-primary-foreground/60 text-sm font-medium">
-                            No credit card required • Instant access • Trusted worldwide
+                            Free forever for pet parents • Dedicated to pet wellness • Join 50k+ Happy Families
                         </p>
                     </div>
                 </motion.div>

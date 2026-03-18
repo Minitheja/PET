@@ -13,7 +13,7 @@ const pillars = [
 
 export default function VisionMission() {
     return (
-        <section className="py-24 px-6 bg-white relative overflow-hidden">
+        <section id="vision" className="py-24 px-6 bg-white relative overflow-hidden">
             <div className="absolute top-0 right-0 w-1/3 h-full bg-orange-50/50 rounded-bl-[10rem] -z-10" />
 
             <div className="max-w-7xl mx-auto">

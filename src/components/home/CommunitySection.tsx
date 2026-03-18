@@ -26,7 +26,7 @@ export default function CommunitySection() {
                         viewport={{ once: true }}
                         className="bg-orange-100 text-orange-700 px-4 py-2 rounded-full inline-flex font-bold text-xs uppercase tracking-widest mb-4"
                     >
-                        A to Z Pets Tribe
+                        A to Z pets Tribe
                     </motion.div>
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}

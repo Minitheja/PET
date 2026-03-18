@@ -1,39 +1,39 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Truck, RotateCcw, Tag, HeadphonesIcon } from "lucide-react";
+import { Shield, HeadphonesIcon, Users, Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const benefits = [
     {
-        title: "Free Shipping",
-        description: "On orders over $50",
-        icon: Truck,
+        title: "Health Tracking",
+        description: "Smart logs for your pet's wellness",
+        icon: Shield,
         color: "bg-blue-50 text-blue-600",
     },
     {
-        title: "Free Returns",
-        description: "Within 30 days",
-        icon: RotateCcw,
+        title: "Expert Advice",
+        description: "24/7 access to vet professionals",
+        icon: HeadphonesIcon,
+        color: "bg-purple-50 text-purple-600",
+    },
+    {
+        title: "Community Hub",
+        description: "Connect with fellow pet lovers",
+        icon: Users,
         color: "bg-green-50 text-green-600",
     },
     {
-        title: "Best Deals",
-        description: "Guaranteed savings",
-        icon: Tag,
+        title: "Premium Care",
+        description: "Curated products & services",
+        icon: Star,
         color: "bg-orange-50 text-orange-600",
-    },
-    {
-        title: "Customer Support",
-        description: "24/7 online help",
-        icon: HeadphonesIcon,
-        color: "bg-purple-50 text-purple-600",
     }
 ];
 
 export default function Features() {
     return (
-        <section id="benefits" className="py-12 px-6 bg-white border-y border-border">
+        <section id="features" className="py-20 px-6 bg-white border-y border-border">
             <div className="max-w-7xl mx-auto">
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
                     {benefits.map((benefit, index) => (

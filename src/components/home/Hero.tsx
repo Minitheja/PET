@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ShoppingCart, Calendar, Shield, Star } from "lucide-react";
+import { Shield, Star } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -22,12 +22,12 @@ export default function Hero() {
                 >
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/50 backdrop-blur-sm border border-primary/20 rounded-full shadow-soft">
                         <span className="w-2 h-2 bg-primary rounded-full animate-pulse" />
-                        <span className="text-sm font-semibold text-primary">Your Pet&apos;s Happy Place</span>
+                        <span className="text-sm font-semibold text-primary">Explore A to Z pets</span>
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-display font-bold text-foreground leading-[1.1]">
-                        Everything Your Pet Needs — <span className="text-primary relative inline-block">
-                            In One Place
+                        The Ultimate Hub for <span className="text-primary relative inline-block">
+                            Pet Parents
                             <motion.svg
                                 initial={{ pathLength: 0 }}
                                 animate={{ pathLength: 1 }}
@@ -41,23 +41,23 @@ export default function Hero() {
                     </h1>
 
                     <p className="text-xl text-muted-foreground leading-relaxed max-w-xl">
-                        Shop premium pet products, book grooming services, adopt pets, and connect with a community of pet lovers.
+                        A personalized world for your pet where care meets community. Access expert advice, health tracking, and the best products in one place.
                     </p>
 
                     <div className="flex flex-wrap gap-4 pt-4">
                         <Link
-                            href="#shop"
+                            href="#vision"
                             className="flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-2xl font-bold shadow-medium hover:translate-y-[-2px] transition-all"
                         >
-                            <ShoppingCart className="w-5 h-5" />
-                            Shop for Pets
+                            <span className="w-5 h-5 flex items-center justify-center bg-white/20 rounded-lg">✨</span>
+                            Discover Our Mission
                         </Link>
                         <Link
-                            href="#grooming"
+                            href="#features"
                             className="flex items-center gap-2 bg-white text-foreground border border-border px-8 py-4 rounded-2xl font-bold shadow-soft hover:bg-slate-50 hover:translate-y-[-2px] transition-all"
                         >
-                            <Calendar className="w-5 h-5 text-primary" />
-                            Book Grooming
+                            <span className="w-5 h-5 flex items-center justify-center bg-primary/10 rounded-lg">🐾</span>
+                            What We Offer
                         </Link>
                     </div>
 
@@ -66,7 +66,7 @@ export default function Hero() {
                         <div className="flex -space-x-3">
                             {[1, 2, 3, 4].map((i) => (
                                 <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-200 overflow-hidden ring-2 ring-primary/5">
-                                    <div className="w-full h-full bg-slate-300 flex items-center justify-center text-[10px] font-bold text-slate-500">P{i}</div>
+                                    <div className="w-full h-full bg-slate-300 flex items-center justify-center text-[10px] font-bold text-slate-500">U{i}</div>
                                 </div>
                             ))}
                         </div>
@@ -74,7 +74,7 @@ export default function Hero() {
                             <div className="flex items-center gap-1">
                                 {[1, 2, 3, 4, 5].map((i) => <Star key={i} className="w-4 h-4 fill-accent text-accent" />)}
                             </div>
-                            <p className="text-sm font-medium text-muted-foreground mt-1">10k+ Happy Pet Parents</p>
+                            <p className="text-sm font-medium text-muted-foreground mt-1">Join 50k+ Happy Pet Parents</p>
                         </div>
                     </div>
                 </motion.div>
@@ -111,8 +111,8 @@ export default function Hero() {
                                 <Shield className="w-5 h-5 text-green-600" />
                             </div>
                             <div>
-                                <p className="text-xs text-muted-foreground uppercase font-bold tracking-wider">Vet Care</p>
-                                <p className="text-sm font-bold">100% Secure</p>
+                                <p className="text-xs text-muted-foreground uppercase font-bold tracking-wider">Safety First</p>
+                                <p className="text-sm font-bold">100% Certified</p>
                             </div>
                         </div>
                         <p className="text-xs text-muted-foreground">Certified experts for your pet&apos;s health.</p>
@@ -131,11 +131,10 @@ export default function Hero() {
                                 <span className="absolute -top-1 -right-1 w-4 h-4 bg-secondary rounded-full border-2 border-white" />
                             </div>
                             <div>
-                                <p className="text-[10px] text-muted-foreground uppercase font-bold tracking-wider">New Arrival</p>
-                                <p className="text-sm font-bold">Organic Treats</p>
+                                <p className="text-[10px] text-muted-foreground uppercase font-bold tracking-wider">Health Records</p>
+                                <p className="text-sm font-bold">Smart Tracking</p>
                                 <div className="flex items-center gap-1 mt-1">
-                                    <span className="text-xs font-bold text-primary">$12.00</span>
-                                    <span className="text-[10px] text-muted-foreground line-through">$18.00</span>
+                                    <span className="text-xs font-bold text-primary">All pets covered</span>
                                 </div>
                             </div>
                         </div>
